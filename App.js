@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { StyleSheet, Text, View, NativeModules, Button } from 'react-native';
+//https://medium.com/hackernoon/react-native-bridge-for-ios-and-android-43feb9712fcb
 export default class App extends Component {
 
   constructor(props) {
@@ -26,8 +27,7 @@ export default class App extends Component {
   render() {
     return (
       <View style={styles.container}>
-        <Text style={styles.welcome}>Welcome to Light App!!</Text>
-        <Text> Bulb is {this.state.isOn ? "ON" : "OFF"}</Text>
+        <Text> Icon is {this.state.isOn ? "ON" : "OFF"}</Text>
         {!this.state.isOn ? <Button
           onPress={this.turnOn}
           title="Turn ON "

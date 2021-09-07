@@ -132,6 +132,12 @@ android {
         versionCode 1
         versionName "1.0"
     }
+
+
+//    compileOptions {
+//        targetCompatibility JavaVersion.VERSION_16
+//        sourceCompatibility JavaVersion.VERSION_16
+//    }
     splits {
         abi {
             reset()
