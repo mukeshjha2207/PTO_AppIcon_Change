@@ -7,7 +7,7 @@
 
 #import "React/RCTBridgeModule.h"
 @interface RCT_EXTERN_MODULE(AppIcon, NSObject)
-RCT_EXTERN_METHOD(turnOn)
-RCT_EXTERN_METHOD(turnOff)
+//RCT_EXTERN_METHOD(turnOn)
+RCT_EXTERN_METHOD(setAppIcon:(NSString *)name)
 RCT_EXTERN_METHOD(getStatus: (RCTResponseSenderBlock)callback)
 @end

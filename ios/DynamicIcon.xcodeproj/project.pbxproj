@@ -14,6 +14,10 @@
 		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
 		AAA4636226E7D932002DB968 /* ToggleAppIcon.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAA4636126E7D932002DB968 /* ToggleAppIcon.swift */; };
 		AAA4636426E7DC85002DB968 /* Icon.m in Sources */ = {isa = PBXBuildFile; fileRef = AAA4636326E7DC85002DB968 /* Icon.m */; };
+		AAA4637826E91960002DB968 /* beyond-bank_app-icon@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = AAA4637426E91960002DB968 /* beyond-bank_app-icon@3x.png */; };
+		AAA4637926E91960002DB968 /* k2-bank_app-icon@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = AAA4637526E91960002DB968 /* k2-bank_app-icon@3x.png */; };
+		AAA4637A26E91960002DB968 /* beyond-bank_app-icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = AAA4637626E91960002DB968 /* beyond-bank_app-icon@2x.png */; };
+		AAA4637B26E91960002DB968 /* k2-bank_app-icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = AAA4637726E91960002DB968 /* k2-bank_app-icon@2x.png */; };
 		D917EBAA815DE71CB904BF3D /* libPods-DynamicIcon-DynamicIconTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 39D2132F24D5112EECCF68BE /* libPods-DynamicIcon-DynamicIconTests.a */; };
 		E38DE339666F5E0D0791D0F8 /* libPods-DynamicIcon.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D6424D5AC575146F181A15B /* libPods-DynamicIcon.a */; };
 /* End PBXBuildFile section */
@@ -47,6 +51,10 @@
 		AAA4636026E7D932002DB968 /* DynamicIcon-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "DynamicIcon-Bridging-Header.h"; sourceTree = "<group>"; };
 		AAA4636126E7D932002DB968 /* ToggleAppIcon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToggleAppIcon.swift; sourceTree = "<group>"; };
 		AAA4636326E7DC85002DB968 /* Icon.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Icon.m; sourceTree = "<group>"; };
+		AAA4637426E91960002DB968 /* beyond-bank_app-icon@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "beyond-bank_app-icon@3x.png"; sourceTree = "<group>"; };
+		AAA4637526E91960002DB968 /* k2-bank_app-icon@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "k2-bank_app-icon@3x.png"; sourceTree = "<group>"; };
+		AAA4637626E91960002DB968 /* beyond-bank_app-icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "beyond-bank_app-icon@2x.png"; sourceTree = "<group>"; };
+		AAA4637726E91960002DB968 /* k2-bank_app-icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "k2-bank_app-icon@2x.png"; sourceTree = "<group>"; };
 		C7299501F2FE180A7002E9EE /* Pods-DynamicIcon.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DynamicIcon.debug.xcconfig"; path = "Target Support Files/Pods-DynamicIcon/Pods-DynamicIcon.debug.xcconfig"; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
@@ -91,6 +99,7 @@
 		13B07FAE1A68108700A75B9A /* DynamicIcon */ = {
 			isa = PBXGroup;
 			children = (
+				AAA4636526E90F4A002DB968 /* AppIcons */,
 				AAA4636126E7D932002DB968 /* ToggleAppIcon.swift */,
 				13B07FAF1A68108700A75B9A /* AppDelegate.h */,
 				13B07FB01A68108700A75B9A /* AppDelegate.m */,
@@ -154,6 +163,17 @@
 				7D3DF6963CEAB4C10DBF60E6 /* Pods-DynamicIcon-DynamicIconTests.release.xcconfig */,
 			);
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		AAA4636526E90F4A002DB968 /* AppIcons */ = {
+			isa = PBXGroup;
+			children = (
+				AAA4637626E91960002DB968 /* beyond-bank_app-icon@2x.png */,
+				AAA4637426E91960002DB968 /* beyond-bank_app-icon@3x.png */,
+				AAA4637726E91960002DB968 /* k2-bank_app-icon@2x.png */,
+				AAA4637526E91960002DB968 /* k2-bank_app-icon@3x.png */,
+			);
+			name = AppIcons;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -250,6 +270,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AAA4637B26E91960002DB968 /* k2-bank_app-icon@2x.png in Resources */,
+				AAA4637826E91960002DB968 /* beyond-bank_app-icon@3x.png in Resources */,
+				AAA4637A26E91960002DB968 /* beyond-bank_app-icon@2x.png in Resources */,
+				AAA4637926E91960002DB968 /* k2-bank_app-icon@3x.png in Resources */,
 				81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */,
 				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
 			);

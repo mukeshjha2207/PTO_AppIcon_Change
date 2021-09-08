@@ -5,39 +5,29 @@ export default class App extends Component {
 
   constructor(props) {
     super(props);
-    this.state = { isOn: false };
+    this.state = { icon: '' };
     this.updateStatus();
   }
-  turnOn = () => {
-    NativeModules.AppIcon.turnOn();
+  toggleIcon = () => {
+    NativeModules.AppIcon.setAppIcon(this.state.icon == 'K2Bank' ? "BeyondBank" : "K2Bank");
     this.updateStatus()
   }
-  turnOff = () => {
-    NativeModules.AppIcon.turnOff();
-    this.updateStatus()
-  }
+
   updateStatus = () => {
-    NativeModules.AppIcon.getStatus((error, isOn) => {
-      this.setState({ isOn: isOn });
+    NativeModules.AppIcon.getStatus((error, icon) => {
+      this.setState({ icon: icon });
     })
   }
-
-
 
   render() {
     return (
       <View style={styles.container}>
-        <Text> Icon is {this.state.isOn ? "ON" : "OFF"}</Text>
-        {!this.state.isOn ? <Button
-          onPress={this.turnOn}
-          title="Turn ON "
+        <Text> Current Icon is {this.state.icon}</Text>
+        <Button
+          onPress={this.toggleIcon}
+          title="Toggle App Icon "
           color="#FF6347"
-        /> :
-          <Button
-            onPress={this.turnOff}
-            title="Turn OFF "
-            color="#FF6347"
-          />}
+        />
       </View>
     );
   }
